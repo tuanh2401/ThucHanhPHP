@@ -22,7 +22,7 @@
             type="number" 
             id="price" 
             name="price" 
-            value="<?= isset($product['PublishedYear']) ? htmlspecialchars($product['PublishedYear']) : '' ?>" 
+            value="<?= isset($product['Price']) ? htmlspecialchars($product['Price']) : '' ?>" 
             required
         >
         <br>
@@ -35,6 +35,17 @@
             required
         >
         <br>
+        <br>
+        <label for="information">Information :</label>
+        <input 
+            type="text" 
+            id="information" 
+            name="information" 
+            value="<?= isset($product['information']) ? htmlspecialchars($product['information']) : '' ?>" 
+            required
+        >
+        <br>
+    
         <button type="submit">Cập nhật</button>
         <a href="index.php">Trở lại</a>
     </form>
