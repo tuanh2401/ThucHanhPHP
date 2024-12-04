@@ -92,6 +92,7 @@ a:hover {
                 <th>Name</th>
                 <th>Price</th>
                 <th>Information</th>
+                <th>Published Year</th>
                 <th>Function</th>
             </tr>
         </thead>
@@ -100,6 +101,7 @@ a:hover {
                 <?php foreach ($products as $product): ?>
                     <tr>
                         <td><?= htmlspecialchars($product['ProductID']) ?></td>
+                         <td><?= htmlspecialchars($product['Name']) ?></td>
                         <td><?= htmlspecialchars($product['Price']) ?></td>
                         <td><?= htmlspecialchars($product['PublishedYear']) ?></td>
                         <td><?= htmlspecialchars($product['Information']) ?></td>
